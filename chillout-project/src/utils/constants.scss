@@ -1,0 +1,13 @@
+$main-bg: linear-gradient(162.62deg, #FFDF3F -1.35%, #FE8359 99.55%);
+$bg-btns: #FE9752;
+$bg-navigation: #2B354DFF;
+$text-color-links: #fff;
+$bg_generation_passwd: #F8F5F0FF;
+$white_color: #FFFFFF;
+$main-text-color: #253238;
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

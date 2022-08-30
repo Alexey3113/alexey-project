@@ -1,0 +1,64 @@
+@import "../../utils/constants.scss";
+
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 255px;
+    height: 100vh;
+    background: $bg-navigation;
+    padding-top: 60px;
+
+    &__avatar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        &-name {
+            color: #fff;
+        }
+        margin-bottom: 26px;
+
+        &::after {
+            content: "";
+            height: 2px;
+            width: 100%;
+            background-color: rgb(147, 158, 182);
+        }
+    }
+
+    &__navigation {
+        
+        display: flex;
+        // justify-content: center;
+        flex-direction: column;
+        // align-items: center;
+        width: 100%;
+    }
+
+    &__link {
+        padding: 20px 70px;
+        color: $text-color-links;
+        text-align: center;
+        margin-bottom: 20px;
+        cursor: pointer;
+        font-size: 22px;
+        transition: background .2s ease-in-out;
+        text-decoration: none;
+        
+        &.active::after {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 2px;
+            background-color: #fff;
+            margin-top: 4px;
+        }
+
+        &:hover {
+            background: #4D84E4FF;
+            transition: background .2s ease-in-out;
+        }
+    }
+}

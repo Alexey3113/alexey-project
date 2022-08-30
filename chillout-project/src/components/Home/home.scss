@@ -1,0 +1,38 @@
+.home {
+    padding: 60px 0 0 255px;
+    text-align: center;
+    font-size: 32px;
+
+    &__content {
+        margin-top: 40px;
+    }
+
+    &__skills {
+        display: flex;
+        gap: 30px;
+        margin-top: 60px;
+        padding: 0 60px;
+
+        &_item {
+            display: flex;
+            padding: 20px;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+
+            &_img {
+
+            }
+            &_title {
+                font-size: 20px;
+                font-weight: 700;
+            }
+            &_text {
+                font-size: 16px;
+            }
+        }
+    }
+}
+

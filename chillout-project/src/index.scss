@@ -1,0 +1,73 @@
+@import "./utils/constants.scss";
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.App {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.main {
+  background: $bg_generation_passwd;
+  min-height: 100vh;
+}
+
+.slide {
+  display: flex;
+  padding: 3vw 120px;
+  align-items: center;
+  justify-content: space-between;
+
+  &__text {
+    color: $white_color;
+    font-size: 18px;
+    margin-right: 40px;
+  }
+
+  &__img {
+    // position: relative;
+    // padding-top: 37%; /* 16:9 Aspect Ratio */
+    // width: 100%;
+    // height: 100%;
+    max-height: 45  0px;
+
+    & img {
+      // max-width: 800px;
+      // max-height: 600px;
+      // position: absolute;
+      // left: 0;
+      // top: 0;
+      width: 100%;
+      height: auto;
+      // max-width: 720px;
+    }
+  }
+
+}
+
+.swiper-slide  {
+  background: #272A32FF;
+  user-select: none;
+}
+
+.swiper-button-prev {
+  color: lighten($color: #2B354DFF, $amount: 5%) !important;
+}
+.swiper-button-next {
+  color: lighten($color: #2B354DFF, $amount: 5%) !important;
+}
